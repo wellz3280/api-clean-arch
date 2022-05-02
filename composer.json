@@ -19,6 +19,7 @@
         "guzzlehttp/psr7": "^2",
         "laminas/laminas-diactoros": "^2.9",
         "monolog/monolog": "^2.5",
-        "vlucas/phpdotenv": "^5.4"
+        "vlucas/phpdotenv": "^5.4",
+        "php-di/php-di": "^6.4"
     }
 }
