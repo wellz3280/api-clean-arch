@@ -1,0 +1,22 @@
+{
+    "name": "weliton/testes",
+    "authors": [
+        {
+            "name": "weliton",
+            "email": "welingtonzsilva@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Teste\\":"src"
+        }
+    },
+    "require": {
+        "slim/slim": "^4.10",
+        "slim/psr7": "^1.5",
+        "nyholm/psr7": "^1.5",
+        "nyholm/psr7-server": "^1.0",
+        "guzzlehttp/psr7": "^2",
+        "laminas/laminas-diactoros": "^2.9"
+    }
+}
