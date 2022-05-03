@@ -1,13 +1,13 @@
 <?php
     declare(strict_types=1);
-    namespace Teste\Intra\Repositories;
+    namespace Teste\Infra\Repositories;
 
 use Teste\Domain\Entities\User;
 
-final class UserRepositories
+final class UserRepositorie
 {
-
-    public function apply():array
+ 
+    private function dbRepository():array
     {
         return [
             [
@@ -23,6 +23,17 @@ final class UserRepositories
                 'name'=> 'danilo'
             ]
         ];       
+    }
+
+    public function getUserRepositorie():array
+    {
+        $arrUserObj =[];
+
+        foreach($this->dbRepository() as $data){
+            $arrUserObj[]= new User((int)$data['id'],$data['name']);
+        }
+
+        return $arrUserObj;
     }
 
 }

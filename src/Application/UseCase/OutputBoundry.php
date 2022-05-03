@@ -5,9 +5,13 @@
 final class OutputBoundry
 {
     private array $data;
-    
-    public function output(array $data):array
+    public function __construct(array $data)
     {
-        return $this->data;
+        $this->data = $data;
+    }
+    
+    public function output():array
+    {
+       return $this->data;
     }
 }

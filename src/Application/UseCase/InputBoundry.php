@@ -2,19 +2,15 @@
     declare(strict_types=1);
     namespace Teste\Application\UseCase;
 
-use Teste\Domain\Entities\User;
+use Teste\Infra\Repositories\UserRepositorie;
 
 final class InputBoundry
 {
-    private User $user;
 
-    public function __construct(user $user)
+    public function get():UserRepositorie
     {
-        $this->user = $user;
+       return new UserRepositorie();
+    
     }
 
-    public function getUser():User
-    {
-        return $this->user;
-    }
 }

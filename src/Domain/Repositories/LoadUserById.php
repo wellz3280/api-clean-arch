@@ -7,5 +7,5 @@ use Teste\Domain\Entities\User;
 
 interface LoadUserById
 {
-    public function loadUser(User $user):OutputBoundry;
+    public function loadUser(User $id):OutputBoundry;
 }
