@@ -7,5 +7,5 @@ use Psr\Http\Message\ResponseInterface;
 
 interface InterfaceController
 {
-    public function index(RequestInterface $request, ResponseInterface $response):ResponseInterface;
+    public function index(RequestInterface $request, ResponseInterface $response,array $args):ResponseInterface;
 }

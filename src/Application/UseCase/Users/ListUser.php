@@ -17,10 +17,7 @@ final class ListUser
         $arrObj[] = $item->toArray();
       }
 
-      
-      $output = new OutputBoundry($arrObj);
+      return new OutputBoundry($arrObj);
 
-      return $output;
-    
     }   
 }
