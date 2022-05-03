@@ -42,7 +42,7 @@ final class PetRepositorie
         ];       
     }
 
-    public function getUserRepositorie():array
+    public function getPetRepositorie():array
     {
         $arrUserObj =[];
 
