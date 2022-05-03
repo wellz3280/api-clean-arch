@@ -6,18 +6,25 @@ final class User
 {
     private int $id;
     private string $name;
+    private int  $age;
+    private int $year;
 
-    public function __construct(int $id, string $name)
+    public function __construct(int $id, string $name, int $age, int $year)
     {
         $this->id =$id;
         $this->name = $name;
+        $this->age = $age;
+        $this->year = $year;
+
     }
 
     public function toArray():array
     {
         return[
             'id' => $this->getId(),
-            'name' => $this->getName()
+            'name' => $this->getName(),
+            'age' => $this->getAge(),
+            'year' => $this->getYear()
         ];
     }
 
@@ -32,4 +39,13 @@ final class User
     }
 
 
+    public function getAge()
+    {
+        return $this->age;
+    }
+
+    public function getYear()
+    {
+        return $this->year;
+    }
 }

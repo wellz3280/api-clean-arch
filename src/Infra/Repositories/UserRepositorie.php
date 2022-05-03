@@ -12,15 +12,21 @@ final class UserRepositorie
         return [
             [
                 'id' => 1,
-                'name' => 'weliton'
+                'name' => 'weliton',
+                'age' => 35,
+                'year' => 1986,
             ],
             [
                 'id' => 2,
-                'name' => 'karla'
+                'name' => 'karla',
+                'age' => 38,
+                'year' => 1983,
             ],
             [
                 'id' => 3,
-                'name'=> 'danilo'
+                'name'=> 'danilo',
+                'age' => 34,
+                'year' => 1987
             ]
         ];       
     }
@@ -30,7 +36,12 @@ final class UserRepositorie
         $arrUserObj =[];
 
         foreach($this->dbRepository() as $data){
-            $arrUserObj[]= new User((int)$data['id'],$data['name']);
+            $arrUserObj[]= new User(
+                (int)$data['id']
+                ,$data['name']
+                ,$data['age']
+                ,$data['year']
+            );
         }
 
         return $arrUserObj;
