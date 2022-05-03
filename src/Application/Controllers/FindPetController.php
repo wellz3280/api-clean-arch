@@ -12,7 +12,7 @@ final class FindPetController implements InterfaceController
     public function index(RequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         $findPet = new FindPets(new InputBoundryPet());
-        $pet = $findPet->loadPet((int)$args['id']);
+        $pet = $findPet->load((int)$args['id']);
 
         $load = json_encode($pet->output(), JSON_PRETTY_PRINT);
         $response->getBody()->write($load);

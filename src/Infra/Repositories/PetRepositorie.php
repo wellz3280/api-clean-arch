@@ -18,7 +18,7 @@ final class PetRepositorie
             [
                 'id' => 2,
                 'name' => 'cabra do capiroto',
-                'raca' => 'pincther',
+                'raca' => 'pintcher',
                 'idade' => 5,
             ],
             [

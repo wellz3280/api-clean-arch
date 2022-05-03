@@ -4,9 +4,9 @@
 
 use Teste\Application\UseCase\InputBoundryPet;
 use Teste\Application\UseCase\OutputBoundry;
-use Teste\Domain\Repositories\LoadPetById;
+use Teste\Domain\Repositories\LoadById;
 
-final class FindPets implements LoadPetById
+final class FindPets implements LoadById
 {
     private InputBoundryPet $input;
 
@@ -15,7 +15,7 @@ final class FindPets implements LoadPetById
         $this->input = $input;
     }
 
-    public function loadPet(int $id): OutputBoundry
+    public function load(int $id): OutputBoundry
     {
         $repository = $this->input->get();
         $arrPetObj = [];

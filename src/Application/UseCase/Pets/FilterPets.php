@@ -2,6 +2,7 @@
     declare(strict_types=1);
     namespace Teste\Application\UseCase\Pets;
 
+
 use Teste\Application\UseCase\InputBoundryPet;
 use Teste\Application\UseCase\OutputBoundry;
 use Teste\Domain\Repositories\LoadByParameter;
@@ -19,17 +20,19 @@ final class FilterPets implements LoadByParameter
         $repository = $this->input->get();
         
         $arrObjFilter = [];
+        $arrObjFilterPets = [];
 
-        foreach($repository->getPetRepositorie() as $item){
-               
+
+        foreach($repository->getPetRepositorie() as $item){   
+        
             foreach($item->toArray() as $key => $itens){
-                    
                 if($param == $key && $value == $itens){
-                    $arrObjFilter[]= $item->toArray();
+                    $arrObjFilterPets[] = $item->toArray();
                 }
             }
         }
 
-        return new OutputBoundry($arrObjFilter);
+
+        return new OutputBoundry($arrObjFilterPets);
     }
 }

@@ -5,9 +5,9 @@
 use Teste\Application\UseCase\InputBoundry;
 use Teste\Domain\Entities\User;
 use Teste\Application\UseCase\OutputBoundry;
-use Teste\Domain\Repositories\LoadUserById;
+use Teste\Domain\Repositories\LoadById;
 
-final class FindUserById implements LoadUserById
+final class FindUserById implements LoadById
 {
     private InputBoundry $input;
 
@@ -16,7 +16,7 @@ final class FindUserById implements LoadUserById
         $this->input = $input;
     }
 
-    public function loadUser(int $id): OutputBoundry
+    public function load(int $id): OutputBoundry
     {
         $repository = $this->input->get();
         $arrUserObj = [];

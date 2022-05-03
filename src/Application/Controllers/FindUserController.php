@@ -12,7 +12,7 @@ final class FindUserController implements InterfaceController
     public function index(RequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         $findUser = new FindUserById(new InputBoundry());
-        $user = $findUser->loadUser((int)$args['id']);
+        $user = $findUser->load((int)$args['id']);
         
         $load = json_encode($user->output(), JSON_PRETTY_PRINT);
         $response->getBody()->write($load);
