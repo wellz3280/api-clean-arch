@@ -19,6 +19,16 @@ final class Pet
         $this->idade = $idade;
     }
 
+    public function toArray():array
+    {
+        return[
+            'id' => $this->getId(),
+            'name' => $this->getName(),
+            'raca' => $this->getRaca(),
+            'idade' => $this->getIdade()
+        ];    
+    }
+
     public function getId():int
     {
         return $this->id;
