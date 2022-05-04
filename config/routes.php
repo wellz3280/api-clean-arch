@@ -3,6 +3,7 @@
 
 use Slim\App;
 use Teste\Application\Controllers\FilterPetController;
+use Teste\Application\Controllers\FilterUserController;
 use Teste\Application\Controllers\FindPetController;
 use Teste\Application\Controllers\FindUserController;
 use Teste\Application\Controllers\HomeController;
@@ -19,10 +20,11 @@ return function(App $app){
             $app->get('/pets',ListPetController::class.':index');
             $app->get('/pets/{id}',FindPetController::class.':index');
             $app->get('/pets/{parameter}/{value}',FilterPetController::class.':index');
-
+            
             $app->get('/user',ListUserController::class.':index');
             $app->get('/user/{id}',FindUserController::class.':index');
-
+            $app->get('/user/{parameter}/{value}',FilterUserController::class.':index');
+            
         });
     });
 };
