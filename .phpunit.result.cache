@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Test\\UseCases\\Pets\\FilterPetTest::testDeveFiltrarPetComDoisParametros":3},"times":{"ListPetsTest::testRetornoDeArrayComOsTodosOsPets":0.001,"ListPetsTest::testRetornoDeArrayComTodosOsPets":0.001,"Test\\UseCases\\Pets\\ListPetsTest::testRetornoDeArrayComTodosOsPets":0,"Test\\UseCases\\Pets\\FilterPetTest::testDeveFiltrarPetComDoisParametros":0.002}}
