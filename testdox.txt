@@ -10,11 +10,11 @@ User (Test\Controllers\Pets\User)
 
 Pet Web (Test\Web\PetWeb)
  [x] Deve retornar lista de pets em formato json
- [x] Deve retornar busca de pets po id
- [x] Deve retornar e filtrar pets por parametros
+ [x] Deve retornar busca de pets po id em formato json
+ [x] Deve retornar e filtrar pets por parametros em formato json
 
 User Web (Test\Web\UserWeb)
  [x] Deve retornar lista de usuarios em formato json
- [x] Deve retornar busca de usuarios po id
- [x] Deve retornar e filtrar usuarios por parametros
+ [x] Deve retornar busca de usuarios po id em formato json
+ [x] Deve retornar e filtrar usuarios por parametros em formato json
 
