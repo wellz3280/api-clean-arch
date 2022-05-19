@@ -1,10 +1,20 @@
-Pet (Test\UseCases\Pets\Pet)
+Pet (Test\Controllers\Pets\Pet)
  [x] Deve retornar array com todos os pets
  [x] Deve buscar um pet por id
  [x] Deve filtrar pet com dois parametros
 
-List User (Test\UseCases\Pets\ListUser)
+User (Test\Controllers\Pets\User)
  [x] Deve retornar lista com todos usuarios
  [x] Deve buscar um usuario por id
  [x] Deve filtrar usuarios usando 2 parametros
+
+Pet Web (Test\Web\PetWeb)
+ [x] Deve retornar lista de pets em formato json
+ [x] Deve retornar busca de pets po id
+ [x] Deve retornar e filtrar pets por parametros
+
+User Web (Test\Web\UserWeb)
+ [x] Deve retornar lista de usuarios em formato json
+ [x] Deve retornar busca de usuarios po id
+ [x] Deve retornar e filtrar usuarios por parametros
 
