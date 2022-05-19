@@ -18,7 +18,7 @@ final class PetWebTest extends TestCase
         self::assertSame('cabra do capiroto',$json[1]->name);
     }
 
-    public function testDeveRetornarBuscaDePetsPoId()
+    public function testDeveRetornarBuscaDePetsPoIdEmFormatoJson()
     {
         $url = file_get_contents("http://localhost:8888/api/petshoposasco/pets/1");
         $json = json_decode($url);
@@ -30,7 +30,7 @@ final class PetWebTest extends TestCase
         self::assertSame('do ruim',$json[0]->name);
     }
 
-    public function testDeveRetornarEFiltrarPetsPorParametros()
+    public function testDeveRetornarEFiltrarPetsPorParametrosEmFormatoJson()
     {
          $url = file_get_contents("http://localhost:8888/api/petshoposasco/pets/raca/pintcher");
         $json = json_decode($url);

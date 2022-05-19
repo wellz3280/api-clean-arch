@@ -20,7 +20,7 @@ class UserWebTest extends TestCase
         self::assertSame('danilo',$json[2]->name);
     }
 
-    public function testDeveRetornarBuscaDeUsuariosPoId()
+    public function testDeveRetornarBuscaDeUsuariosPoIdEmFormatoJson()
     {
         $url = file_get_contents("http://localhost:8888/api/petshoposasco/user/1");
         $json = json_decode($url);
@@ -33,7 +33,7 @@ class UserWebTest extends TestCase
 
     }
 
-    public function testDeveRetornarEFiltrarUsuariosPorParametros()
+    public function testDeveRetornarEFiltrarUsuariosPorParametrosEmFormatoJson()
     {
          $url = file_get_contents("http://localhost:8888/api/petshoposasco/user/age/35");
         $json = json_decode($url);
