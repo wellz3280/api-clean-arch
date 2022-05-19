@@ -1,9 +1,10 @@
-Filter Pet (Test\UseCases\Pets\FilterPet)
+Pet (Test\UseCases\Pets\Pet)
+ [x] Deve retornar array com todos os pets
+ [x] Deve buscar um pet por id
  [x] Deve filtrar pet com dois parametros
 
-Find Pets (Test\UseCases\Pets\FindPets)
- [x] Deve buscar um pet por id
-
-List Pets (Test\UseCases\Pets\ListPets)
- [x] Retorno de array com todos os pets
+List User (Test\UseCases\Pets\ListUser)
+ [x] Deve retornar lista com todos usuarios
+ [x] Deve buscar um usuario por id
+ [x] Deve filtrar usuarios usando 2 parametros
 
